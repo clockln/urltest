@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const param = location.search;
   if(param.length == 1){
-    continue;
+    return true;
   }else{
     const displaytest = document.getElementById('display_area')
     displaytest.value = param.split('?')[1];
