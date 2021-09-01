@@ -41,6 +41,15 @@ window.addEventListener('DOMContentLoaded', () => {
     selectDiv.innerHTML = '<p>' + imglist[listKey] + '</p>'
   }
 
+  const param = location.search;
+  if(param.length == 1){
+    continue;
+  }else{
+    const displaytest = document.getElementById('display_area')
+    displaytest.value = param.split('?')[1];
+    console.log(param.split('?'));
+  }
+
 });
 
 const data = [
