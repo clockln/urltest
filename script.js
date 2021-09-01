@@ -8,7 +8,9 @@ const imgDisplay = document.getElementById('imgdisplay');
 btn.addEventListener('click', () => {
   nav.classList.toggle('open-menu')
 
-  history.replaceState('','','test');
+  history.replaceState('','','?param=param');
+  const param = location.search
+  console.log(param)
 
   if(imgDisplay.disabled == true){
     imgDisplay.disabled = false;
@@ -19,4 +21,6 @@ btn.addEventListener('click', () => {
 });
 
 }
+
+
 
